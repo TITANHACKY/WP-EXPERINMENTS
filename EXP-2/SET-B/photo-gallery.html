@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Gallery</title>
+    <style type="text/css">
+        body {
+            background: #222;
+            margin: 0;
+        }
+        .thumbnails img {
+            height: 80px;
+            border: 4px solid #555;
+            padding: 1px;
+            margin: 0 10px 10px 0;
+        }
+
+        .thumbnails img:hover {
+            border: 4px solid #00ccff;
+            cursor:pointer;
+        }
+
+        .preview img {
+            border: 4px solid #444;
+            padding: 1px;
+            width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery" align="center">
+        <h2 style="color: white">Photo Gallery</h2>
+        <div class="thumbnails">
+        <img onmouseover="getElementById('preview').src=this.src" src="https://i.pinimg.com/originals/d9/1a/92/d91a92581c3e0209d7080c96000c5912.jpg" alt="" />
+        <img onmouseover="getElementById('preview').src=this.src" src="http://getwallpapers.com/wallpaper/full/1/a/8/423251.jpg" alt="" />
+        <img onmouseover="getElementById('preview').src=this.src" src="https://www.hdwallpaper.nu/wp-content/uploads/2017/02/neuschwanstein_castle-14.jpg" alt="" />
+        <img onmouseover="getElementById('preview').src=this.src" src="https://airwallpaper.com/wp-content/uploads/2016/08/1080p-Nature-HD-Wallpaper.jpg" alt="" />
+        <img onmouseover="getElementById('preview').src=this.src" src="http://wallpapercave.com/wp/5OaTo1u.jpg" alt="" />
+        <img onmouseover="getElementById('preview').src=this.src" src="https://wallpapercave.com/wp/wp2397536.jpg" alt="" />
+        <img onmouseover="getElementById('preview').src=this.src" src="http://www.pixelstalk.net/wp-content/uploads/2016/07/1920x1080-HD-Wallpapers.jpg" alt="" />
+        </div>
+        <div class="thumbnails">
+        <img onmouseover="getElementById('preview').src=this.src" src="http://www.pixelstalk.net/wp-content/uploads/2016/06/Wonderful-waterfall-wallpaper-hd-wallpapers.jpg" alt="" />
+        <img onmouseover="getElementById('preview').src=this.src" src="http://www.pixelstalk.net/wp-content/uploads/2016/07/Desktop-HD-Pictures-1920x1080.jpg" alt="" />
+        <img onmouseover="getElementById('preview').src=this.src" src="https://www.pixelstalk.net/wp-content/uploads/2016/07/Peaceful-Wallpapers-HD.jpg" alt="" />
+        <img onmouseover="getElementById('preview').src=this.src" src="http://www.pixelstalk.net/wp-content/uploads/2016/04/HD-Fantasy-Nature-Wallpapers.jpg" alt="" />
+        <img onmouseover="getElementById('preview').src=this.src" src="https://hddesktopwallpapers.in/wp-content/uploads/2015/09/cliff-wallpaper.jpg" alt="" />
+        <img onmouseover="getElementById('preview').src=this.src" src="http://www.pixelstalk.net/wp-content/uploads/2016/04/Yosemite-Mac-X-Stock-Wallpaper-HD-download.jpg" alt="" />
+        </div>
+        <div class="preview" align="center">
+            <img id="preview" src="https://hdqwalls.com/download/best-nature-image-1920x1080.jpg" alt=""/>
+        </div>
+    </div>
+</body>
+</html>

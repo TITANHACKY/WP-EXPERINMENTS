@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greethings</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="form">
+        <h3>Greetings</h3>
+        <form>
+            <input id="name" placeholder="Enter Your Name" type="text">
+        </form>
+        <button onclick="greetings()" >Submit</button>
+        <p id="display"></p>
+    </div>
+    <script>
+        function greetings() {
+            var text = document.getElementById("name").value;
+            document.getElementById("display").innerHTML = 'Hello '+text;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adding</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="overview">
+    <h3>Addition</h3>
+    <input type="number" placeholder="Enter The Number" id="text1" required>
+    <button id="add_button" onclick="add()">Add</button>
+    <button id="display_button" onclick="display()">Display</button>
+<!--    <div id="elements"></div>-->
+    <p id="result"></p>
+    </div>
+    <script>
+        var x = 0;
+        var array = Array();
+
+        function add()
+        {
+         number = parseInt(document.getElementById("text1").value);
+         if(!isNaN(number)) {
+             array[x] = number
+             alert("\nAdded " + number + "\n\nPress Display To See The Total");
+             x++;
+             document.getElementById("text1").value = "";
+         }
+         else {
+             alert("Enter Any Number")
+         }
+        }
+
+        function display()
+        {
+            var e = "<hr/>";
+            var total=0;
+            for (var y = 0; y < array.length; y++) {
+                e += "Number " + (y+1) + " = " + array[y] + "<br/>";
+                total += array[y]
+            }
+           document.getElementById("result").innerHTML = "Total = " + total;
+           // document.getElementById("result").innerHTML = "Total = " + total;
+        }
+    </script>
+</body>
+</html>
